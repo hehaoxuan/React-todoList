@@ -36,7 +36,8 @@ Todolist: front end based on react and back end of node.js
 ### 清除所有完成的todo | Clear all completed todo
 ![图片](https://user-images.githubusercontent.com/52476806/145163564-612ffd4d-ee32-456d-b3b6-1726073a2441.png)
 
-
+### 404 NotFound
+![图片](https://user-images.githubusercontent.com/52476806/145164882-ba8859a9-9e7e-48bf-8164-e02fb628a92a.png)
 
 # 项目使用
 ## 后端 | Node.js

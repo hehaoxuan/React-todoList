@@ -3,7 +3,10 @@
 
 Todolist: front end based on react and back end of node.js
 
-### 项目结构
+### 技术栈 | Technology stack
+React.js+antd | Node.js+Express+Mongoose+MongoDB
+
+### 项目结构 | Project structure
 
 ```
 ├── todolist_server  #Node.js服务器 | node.js server
@@ -17,7 +20,7 @@ Todolist: front end based on react and back end of node.js
 │   ├────config      #存放请求地址文件
 ```
 
-### 项目演示
+### 项目演示 | Demo project
 
 #### todo总览 | Todo overview
 ![图片](https://user-images.githubusercontent.com/52476806/145163074-85867eda-3181-478b-833b-1bfb521737e3.png)
@@ -39,7 +42,7 @@ Todolist: front end based on react and back end of node.js
 #### 404 NotFound
 ![图片](https://user-images.githubusercontent.com/52476806/145164882-ba8859a9-9e7e-48bf-8164-e02fb628a92a.png)
 
-### 项目使用
+### 项目使用 | Project use
 #### 后端 | Node.js
 (先启动后端) 然后切换到todolist_server路径
 
@@ -49,7 +52,7 @@ Todolist: front end based on react and back end of node.js
 
 （默认）http://localhost:3001/
 
-## 前端 | React
+#### 前端 | React
 切换到todolist_web路径
 
 switch to todolist_web path

@@ -17,30 +17,30 @@ Todolist: front end based on react and back end of node.js
 │   ├────config      #存放请求地址文件
 ```
 
-# 项目演示
+### 项目演示
 
-### todo总览 | Todo overview
+#### todo总览 | Todo overview
 ![图片](https://user-images.githubusercontent.com/52476806/145163074-85867eda-3181-478b-833b-1bfb521737e3.png)
 
-### todo详细页 | Todo Detail
+#### todo详细页 | Todo Detail
 ![图片](https://user-images.githubusercontent.com/52476806/145163351-c04c70ce-3037-4097-8095-a89dc6517665.png)
-### 新增todo | new Todo
+#### 新增todo | new Todo
 ![图片](https://user-images.githubusercontent.com/52476806/145163276-de33dbb0-a9b5-4954-b2f1-a95c37f2e913.png)
 
-### 删除todo | delete todo
+#### 删除todo | delete todo
 ![图片](https://user-images.githubusercontent.com/52476806/145163460-dca17fe9-cc11-481e-a054-d7ec27c9a924.png)
 
-### 完成todo | complete todo
+#### 完成todo | complete todo
 ![图片](https://user-images.githubusercontent.com/52476806/145163525-0838de59-321e-4b61-a4d1-0604096bc177.png)
 
-### 清除所有完成的todo | Clear all completed todo
+#### 清除所有完成的todo | Clear all completed todo
 ![图片](https://user-images.githubusercontent.com/52476806/145163564-612ffd4d-ee32-456d-b3b6-1726073a2441.png)
 
-### 404 NotFound
+#### 404 NotFound
 ![图片](https://user-images.githubusercontent.com/52476806/145164882-ba8859a9-9e7e-48bf-8164-e02fb628a92a.png)
 
-# 项目使用
-## 后端 | Node.js
+### 项目使用
+#### 后端 | Node.js
 (先启动后端) 然后切换到todolist_server路径
 
 (start the backend first) and then switch to todolist_server path

@@ -6,20 +6,6 @@ Todolist: front end based on react and back end of node.js
 ### 技术栈 | Technology stack
 React.js+antd | Node.js+Express+Mongoose+MongoDB
 
-### 项目结构 | Project structure
-
-```
-├── todolist_server  #Node.js服务器 | node.js server
-│   ├────server.js   #程序入口 使用Node server开启后台服务| program entry uses the node server to start the background service
-│   ├────controllers #操作数据库 实现功能 | operate the database
-│   └────database    #存放mongoDb数据库的配置(需要手动修改 dbURL) 云db申请地址 https://account.mongodb.com/ | stores the configuration of mongodb database
-│   └────models      #存放todo schema | todo schema
-│   └────routes      #存放后台请求地址 | storage request address
-├── todolist_web     #React网页页面 | react webpage
-│   ├────src         #前端项目React源码目录 
-│   ├────config      #存放请求地址文件
-```
-
 ### 项目演示 | Demo project
 
 #### todo总览 | Todo overview
@@ -41,6 +27,20 @@ React.js+antd | Node.js+Express+Mongoose+MongoDB
 
 #### 404 NotFound
 ![图片](https://user-images.githubusercontent.com/52476806/145164882-ba8859a9-9e7e-48bf-8164-e02fb628a92a.png)
+
+### 项目结构 | Project structure
+
+```
+├── todolist_server  #Node.js服务器 | node.js server
+│   ├────server.js   #程序入口 使用Node server开启后台服务| program entry uses the node server to start the background service
+│   ├────controllers #操作数据库 实现功能 | operate the database
+│   └────database    #存放mongoDb数据库的配置(需要手动修改 dbURL) 云db申请地址 https://account.mongodb.com/ | stores the configuration of mongodb database
+│   └────models      #存放todo schema | todo schema
+│   └────routes      #存放后台请求地址 | storage request address
+├── todolist_web     #React网页页面 | react webpage
+│   ├────src         #前端项目React源码目录 
+│   ├────config      #存放请求地址文件
+```
 
 ### 项目使用 | Project use
 #### 后端 | Node.js

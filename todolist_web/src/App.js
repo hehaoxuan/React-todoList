@@ -1,13 +1,13 @@
-import Navbar from './Navbar';
-import Home from './Home';
+import Navbar from "./Navbar";
+import Home from "./Home";
 // import '~antd/dist/antd.css';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
-import Create from './Create';
-import TodoDetails from './TodoDetails';
-import NotFoundPage from './NotFondPage';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Create from "./Create";
+import TodoDetails from "./TodoDetails";
+import NotFoundPage from "./NotFondPage";
 function App() {
   return (
-    <Router>
+    <Router basename="/React-todoList">
       <div className="App">
         <Navbar />
         <div className="content">
@@ -22,7 +22,7 @@ function App() {
               <TodoDetails />
             </Route>
             <Route path="*">
-              <NotFoundPage/>
+              <NotFoundPage />
             </Route>
           </Switch>
         </div>
@@ -32,4 +32,3 @@ function App() {
 }
 
 export default App;
-

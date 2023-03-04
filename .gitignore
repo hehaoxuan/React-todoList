@@ -2,3 +2,5 @@
 /todolist_web/node_modules/
 /todolist_web/dist/
 /todolist_web/npm-debug.log
+/build
+/node_modules

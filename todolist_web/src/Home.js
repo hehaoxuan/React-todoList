@@ -21,6 +21,7 @@ const Home = () => {
   }, [pending]);
 
   const fetchAll = () => {
+    console.log(process.env.BASE_URL);
     fetch(todo_all(), {
       method: "GET",
     })

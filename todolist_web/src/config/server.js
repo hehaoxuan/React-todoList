@@ -1,6 +1,14 @@
-export const server = process.env.BASE_URL
-  ? "http://139.155.91.186:3001/"
-  : "http://localhost:3001";
+const currentUrl = window.location.href;
+const checkUrl = !!(
+  currentUrl.startsWith("http://localhost") ||
+  currentUrl.startsWith("https://localhost") ||
+  currentUrl.startsWith("http://127.0.0.1") ||
+  currentUrl.startsWith("https://127.0.0.1")
+);
+
+export const server = checkUrl
+  ? "http://localhost:3001"
+  : "http://139.155.91.186:3001/";
 
 export const todo_all = () => {
   return `${server}`;

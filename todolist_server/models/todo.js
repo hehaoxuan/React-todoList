@@ -22,6 +22,7 @@ const todoSchema = new Schema({
     }
     //id会在数据库中生成 不需要额外增加
 })
-
+// 防止其他类型的数据导致报错
+mongoose.set('strictQuery', false);
 const Todo = mongoose.model('Todo',todoSchema)
 module.exports = Todo

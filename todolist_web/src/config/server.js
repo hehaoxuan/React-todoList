@@ -8,7 +8,7 @@ const checkUrl = !!(
 
 export const server = checkUrl
   ? "http://localhost:3001"
-  : "http://139.155.91.186:3001/";
+  : "https://139.155.91.186:3001/";
 
 export const todo_all = () => {
   return `${server}`;

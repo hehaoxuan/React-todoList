@@ -15,10 +15,14 @@ const connectDB = (app) => {
     })
     .then((result) => {
       console.log("db success connect...");
-      const privateKey = fs.readFileSync("key.pem", "utf8");
-      const certificate = fs.readFileSync("cert.pem", "utf8");
-      const credentials = { key: privateKey, cert: certificate };
-      const httpsServer = https.createServer(credentials, app);
+
+      const options = {
+        key: fs.readFileSync("private.key"),
+        cert: fs.readFileSync("certificate.crt"),
+        ca: fs.readFileSync("ca_bundle.crt"),
+      };
+
+      const httpsServer = https.createServer(options, app);
       httpsServer.listen(3001);
       console.log("server start at https://localhost:3001/");
     })

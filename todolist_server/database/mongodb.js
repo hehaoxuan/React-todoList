@@ -1,5 +1,7 @@
 // const app = express(); //调用构造函数 新建app
 const mongoose = require("mongoose");
+const fs = require("fs");
+const https = require("https");
 
 //连接数据库
 const connectDB = (app) => {
@@ -13,8 +15,12 @@ const connectDB = (app) => {
     })
     .then((result) => {
       console.log("db success connect...");
-      console.log("server start at 3001");
-      app.listen(3001);
+      const privateKey = fs.readFileSync("key.pem", "utf8");
+      const certificate = fs.readFileSync("cert.pem", "utf8");
+      const credentials = { key: privateKey, cert: certificate };
+      const httpsServer = https.createServer(credentials, app);
+      httpsServer.listen(3001);
+      console.log("server start at https://localhost:3001/");
     })
     .catch((err) => {
       console.log("db error" + err);

@@ -18,8 +18,8 @@ const connectDB = (app) => {
 
       // todo:需要在服务器内使用公钥与私钥 才能开启https
       const options = {
-        cert: fs.readFileSync("/etc/node/certs/server.crt"),
-        key: fs.readFileSync("/etc/node/certs/server.key"),
+        cert: fs.readFileSync("server.crt"),
+        key: fs.readFileSync("server.key"),
       };
 
       const httpsServer = https.createServer(options, app);

@@ -15,12 +15,12 @@ const todo_all = (req, res) => {
 //todo细节 传入id 返回todo细节
 const todo_detail = (req, res) => {
   const id = req.params.id;
-  if (typeof id === Number) {
+  if (id?.length > 0) {
     Todo.findById(id).then((result) => {
       res.send(result);
     });
-  }else{
-    res.send('fail')
+  } else {
+    res.send("fail");
   }
 };
 
@@ -37,7 +37,6 @@ const todo_create = (req, res) => {
       res.send("success");
     })
     .catch((err) => {
-      // console.log(err);
       res.send("error");
     });
 };
@@ -45,7 +44,7 @@ const todo_create = (req, res) => {
 //删除todo
 const todo_remove = (req, res) => {
   const id = req.params.id;
-  if (typeof id === Number) {
+  if (id?.length > 0) {
     Todo.findByIdAndDelete(id)
       .then((result) => {
         res.send("success deleted");
@@ -53,8 +52,8 @@ const todo_remove = (req, res) => {
       .catch((err) => {
         console.log(err);
       });
-  }else{
-    res.send('fail')
+  } else {
+    res.send("fail");
   }
   // const todo = new Todo(req)
 };
@@ -66,16 +65,14 @@ const todo_reverse = (req, res) => {
     isDone = JSON.parse(i);
   }
   const id = req.params.id;
-  if(typeof id === Number){
-    Todo.findByIdAndUpdate(id, { isDone: isDone }).then((msg) => {
-        //    console.log(msg);
-        res.send("success updated");
-      });
-  }else{
-    res.send('fail')
-  }
 
-  // const todo = new Todo(req)
+  if (id?.length > 0) {
+    Todo.findByIdAndUpdate(id, { isDone: isDone }).then((msg) => {
+      res.send("success updated");
+    });
+  } else {
+    res.send("fail");
+  }
 };
 
 //删除完成的todo
